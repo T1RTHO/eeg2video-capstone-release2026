@@ -161,10 +161,13 @@ The application has been exercised in the documented local Windows setup, includ
 
 *Figure 6. Local Gradio interface (idle state; no reconstruction displayed).*
 
-<p align="center"><img src="docs/media/webapp_interface_result_sample000.png" alt="Local Gradio interface showing generated output for corresponding input" width="700"></p>
+<p align="center"><img src="docs/media/webapp_interface_result_sample000.png" alt="Local Gradio interface showing generated output for corresponding input, precomputed compile" width="700"></p>
 
-*Figure 7. Local Gradio interface (working state; reconstruction displayed).*
+*Figure 7. Local Gradio interface (working state; reconstruction displayed - Precomputed Generation).*
 
+<p align="center"><img src="docs/media/live_generation.png" alt="Local Gradio interface showing generated output for corresponding input, live compile" width="700"></p>
+
+*Figure 8. Local Gradio interface (working state; reconstruction displayed - Live Generation).*
 
 ## Repository structure
 
