@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/XuanhaoLiu/EEG2Video",
+  "commit": "18af805753bc89e796625cdaaca1d0844bee22a8",
+  "directory": "dataset/meta_info",
+  "sha256": {
+    "All_video_label.npy": "03593ee5a4bfdcde1087e053cd4a71ed48f8c4b31fcc11fe1100ade2bd87f065",
+    "All_video_optical_flow_score.npy": "ab94fce00cd73e9fcf4df664b5f453502f79df64193f4903259cbe582f9049c8"
+  }
+}

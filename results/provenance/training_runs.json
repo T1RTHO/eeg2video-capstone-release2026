@@ -1,0 +1,79 @@
+{
+  "source_commit": "18af805753bc89e796625cdaaca1d0844bee22a8",
+  "visual_predictor": {
+    "status": "complete",
+    "architecture": "GLMNet global/local branches plus Transformer Seq2Seq",
+    "epochs": 200,
+    "training_samples": 1200,
+    "effective_batch": 32,
+    "micro_batch": 4,
+    "prediction_shape": [200, 6, 4, 36, 64],
+    "checkpoint": {
+      "filename": "final_model.pt",
+      "size_bytes": 113486157,
+      "sha256": "508092943464347b69b07de5d9c049c55d0f30b80e4a7c4ff974e20ac98e3741"
+    },
+    "run_config_sha256": "2a32b62c3682a0030c388bd0cc05f1af439d04713d6065c1d48ccfaef1520706",
+    "summary_sha256": "baeae2ec60707fd06e52883c4b58b3966b669679bcfe55008cbdaf0807196779",
+    "important_deviation": "GLMNet Seq2Seq integration is reconstructed from the paper and released components, not an upstream released checkpoint."
+  },
+  "semantic_predictor": {
+    "status": "complete",
+    "architecture": [310, 10000, 10000, 10000, 10000, 59136],
+    "parameters": 894559136,
+    "feature_variant": "full_window_400fft",
+    "epochs": 200,
+    "training_samples": 1200,
+    "final_training_mse": 0.03802711899081866,
+    "prediction_shape": [200, 77, 768],
+    "checkpoint": {
+      "filename": "final_model.pt",
+      "size_bytes": 3578242309,
+      "sha256": "3df77e7e36c9afffdd87c09c10b329ebdc88a0141e97348d96ff45d3bf6da377"
+    },
+    "run_config_sha256": "3b800eeb5cb405651c637b15ccb71f927b2f40bf9d680189281cd6c8b567d73f",
+    "summary_sha256": "3f22aac2f5fe86b421530a0f713495cc026c42ddcb94c90d239f717368c4f517"
+  },
+  "dynamic_predictor": {
+    "status": "complete",
+    "architecture": "Two-branch GLMNet, 256 features per branch, two classes",
+    "parameters": 1473938,
+    "epochs": 200,
+    "batch_size": 8,
+    "prediction_shape": [200],
+    "label_encoding": {"0": "slow", "1": "fast"},
+    "test_accuracy": 0.485,
+    "test_balanced_accuracy": 0.48946206342834203,
+    "checkpoint": {
+      "filename": "final_model.pt",
+      "size_bytes": 5906643,
+      "sha256": "6d7f35c82173ce481c965f5724df1ae80caa9f4cf10ce5cb70410432ebc1463a"
+    },
+    "run_config_sha256": "cff529d4cef73fd0b08290b6e4d9cdb96d200e07095b3dd1dd21e8ee486125d5",
+    "summary_sha256": "a1c42e67673fc465d8a8c5ff54c5479ddb3f922eff48fa8fa8ab8a0bdb728199",
+    "interpretation": "Block 7 fast/slow classifier performance only."
+  },
+  "diffusion": {
+    "status": "complete",
+    "completed_updates": 24000,
+    "planned_updates": 24000,
+    "epochs": 200,
+    "training_clips": 1200,
+    "test_block_used": false,
+    "base_model": "CompVis/stable-diffusion-v1-4",
+    "base_model_revision": "133a221b8aa7292a167afc5127cb63fb5005638b",
+    "latent_scale": 0.18215,
+    "unet": {
+      "filename": "diffusion_pytorch_model.bin",
+      "size_bytes": 1967295254,
+      "sha256": "95a5018d42862f3fe9d0e45f7f01bebe1b7cf611c19f56cbabaf6f4d74930543"
+    },
+    "scheduler_config_sha256": "7a33e77332bb34ae30a24bcef37f184acc73b93c99202ae3e1c353ed452a2609",
+    "run_config_sha256": "b07bad5553eb05d4ddb9bd122b6cf471777b3b62f938f9bb0040b87dd618a6b3",
+    "provenance_sha256": "4427dbc5d969fb4057115a90da0762c52164c3286e26579c9d6d35e284ae7a17",
+    "notes": [
+      "Training used paper_all, 120 updates per epoch, effective batch 10, micro-batch 1.",
+      "Training resume state is not included in this release."
+    ]
+  }
+}

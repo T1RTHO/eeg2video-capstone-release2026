@@ -1,0 +1,7 @@
+cd /d D:\Capstone\eeg2video-capstone-release
+
+set "EEG2VIDEO_ASSETS_DIR=D:\Capstone\eeg2video-assets-private"
+
+set "EEG2VIDEO_WORKER_PYTHON=C:\Users\anime\miniconda3\envs\eeg2video_generation\python.exe"
+
+run_webapp.bat

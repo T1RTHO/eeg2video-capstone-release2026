@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "completed_clips": 200,
+  "planned_clips": 200,
+  "missing_test_indices": [],
+  "aggregates": {
+    "rgb_mse_01": {
+      "mean": 0.21540319480994674,
+      "median": 0.19689809303773112,
+      "valid_clips": 200
+    },
+    "psnr_db": {
+      "mean": 7.2348758457656235,
+      "median": 7.057587952016606,
+      "valid_clips": 200
+    },
+    "ssim_rgb_7x7": {
+      "mean": 0.23817633496278148,
+      "median": 0.21625636553192332,
+      "valid_clips": 200
+    },
+    "reference_adjacent_mae_255": {
+      "mean": 13.502254050925925,
+      "median": 10.507782886646417,
+      "valid_clips": 200
+    },
+    "generated_adjacent_mae_255": {
+      "mean": 4.699198111074942,
+      "median": 2.728628653067129,
+      "valid_clips": 200
+    },
+    "temporal_difference_mae_255": {
+      "mean": 16.40645664695457,
+      "median": 13.080107060185188,
+      "valid_clips": 200
+    }
+  },
+  "exact_match_clips": 0,
+  "exactly_static_generated_clips": 0,
+  "generation_seconds_sum": 17021.761988799786,
+  "metric_definitions": {
+    "psnr_db": "From pooled RGB MSE over all six frames per clip; exact matches have infinite PSNR, stored as null and separately counted.",
+    "ssim_rgb_7x7": "scikit-image SSIM, uint8 RGB, data_range255, uniform 7x7 window, sample covariance; mean of six corresponding frame scores.",
+    "temporal_difference_mae_255": "MAE between signed adjacent frame differences of generated and reference RGB. Sensitive to spatial mismatch and appearance; not motion accuracy."
+  },
+  "limitations": [
+    "Single subject/session and Block7 only; not the paper multi-session aggregate.",
+    "Block7 has been inspected previously; not a pristine blind test.",
+    "Reported SSIM settings are explicit; numerical equivalence to released evaluation is not established.",
+    "Paper image/video classifier identification metrics are pending; this is not the complete paper metric suite.",
+    "Only one fixed seed per clip; no best-of-many selection or uncertainty across subjects.",
+    "DANA and beta provenance is documented in protocol_notes.md; prior scheduler_first diagnostic outputs remain separate."
+  ]
+}

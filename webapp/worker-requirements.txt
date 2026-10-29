@@ -1,0 +1,18 @@
+# Tested with Python 3.11.16, PyTorch 2.2.2+cu118 and xFormers 0.0.25.post1+cu118.
+# Install the CUDA-matched PyTorch and xFormers builds separately; this is not a
+# training environment specification and should not replace a working research env.
+numpy==1.26.4
+diffusers==0.11.1
+transformers==4.26.1
+huggingface-hub==0.25.2
+accelerate==0.25.0
+einops==0.7.0
+safetensors==0.4.5
+matplotlib==3.8.4
+Pillow==10.4.0
+imageio==2.34.2
+imageio-ffmpeg==0.5.1
+scikit-image==0.22.0
+tqdm==4.66.5
+ftfy==6.2.3
+psutil==7.2.2

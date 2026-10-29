@@ -1,0 +1,16 @@
+{
+  "data_root": ".",
+  "model_root": ".",
+  "channel_file": "SEED-DV/channel_62_pos.locs",
+  "test_eeg": "outputs/segment_raw_signals_200Hz/test_eeg.npy",
+  "sample_mapping": "outputs/segment_raw_signals_200Hz/sample_mapping.csv",
+  "paired_manifest": "outputs/prepare_video_clips/paired_samples.csv",
+  "generation_output": "outputs/final_evaluation/subject01_session01_block07/paper_beta_released500_v1",
+  "metrics_csv": "outputs/final_evaluation/subject01_session01_block07/paper_beta_released500_v1/evaluation/per_clip_metrics.csv",
+  "diffusion_output": "outputs/video_diffusion_gpu_cosine",
+  "visual_output": "outputs/my_autoregressive_transformer_glmnet",
+  "semantic_output": "outputs/eeg_text/full_window_400fft",
+  "dynamic_output": "outputs/train_dynamic_glmnet",
+  "negative_embedding": "EEG2Video/EEG2Video_New/FinalEvaluation/final_negative.npy",
+  "sd14_model": "models/stable-diffusion-v1-4"
+}

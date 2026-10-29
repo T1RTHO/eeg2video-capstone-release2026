@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "clips": 200,
+  "frames": 1200,
+  "trials_per_frame_or_video": 100,
+  "top_k": 1,
+  "accepted_reference_labels": 3,
+  "aggregates": [
+    {
+      "classifier": "image",
+      "n_way": 2,
+      "matched_mean": 0.7212583333333333,
+      "shifted_control_mean": 0.6940833333333333,
+      "matched_minus_control": 0.027174999999999998,
+      "clips": 200
+    },
+    {
+      "classifier": "image",
+      "n_way": 40,
+      "matched_mean": 0.09837499999999999,
+      "shifted_control_mean": 0.07952500000000001,
+      "matched_minus_control": 0.018850000000000002,
+      "clips": 200
+    },
+    {
+      "classifier": "video",
+      "n_way": 2,
+      "matched_mean": 0.7855,
+      "shifted_control_mean": 0.75135,
+      "matched_minus_control": 0.03415,
+      "clips": 200
+    },
+    {
+      "classifier": "video",
+      "n_way": 40,
+      "matched_mean": 0.12745,
+      "shifted_control_mean": 0.1107,
+      "matched_minus_control": 0.01675,
+      "clips": 200
+    }
+  ],
+  "metric_name": "Released-code-style classifier agreement (documented adaptation)",
+  "limitations": [
+    "Paper Appendix A describes CLIP image classifier; released code uses ViT. This implementation follows released ViT scoring.",
+    "Official Google ViT and MCG-NJU VideoMAE checkpoints replace author-specific mirrors; weight identity with those mirrors is unverified.",
+    "Uses lossless RGB rather than GIF, float32 rather than float16, fixed sampling seeds, and conservative tie handling.",
+    "VideoMAE receives six frames as in released code; pretrained checkpoint default is 16 frames. Fixed sinusoidal positions are built for six frames; pretrained parameter shapes are checked.",
+    "Reference top3 classifier predictions are pseudo-labels, not SEED-DV ground-truth categories. N-way distractors come from 1000 or 400 classifier labels, not the 40 dataset classes.",
+    "Top3-any acceptance means usual 50% and 2.5% chance lines are inappropriate. Under exchangeable continuous random rankings its expectation is 3/(N+2), but actual classifier bias differs. Shifted control is empirical and may include related categories.",
+    "Top1 sensitivity retains exclusion of all top3 reference labels when sampling distractors; it is supplementary, not a separate standard benchmark.",
+    "One subject/session, inspected test block and one seed per clip. No population inference. Scores are not proof of faithful geometry or motion."
+  ]
+}

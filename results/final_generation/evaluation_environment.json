@@ -1,0 +1,9 @@
+{
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "1.26.4",
+    "scikit-image": "0.22.0",
+    "matplotlib": "3.8.4"
+  },
+  "evaluator_sha256": "ab7c6f7ed1ac8bd284f1ae39e8b30d33a7a115adba569af1ca106c39f0ec3d41"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "evaluated_clips": 200,
+  "source_run_config_sha256": "1a5da68e1a25ad5b2fe8483b1a5bc0086cb39983829bf0c0c5b731d7914306e7",
+  "identification_script_sha256": "04e4bd3dde640bbdf426ae4df4d8491b874f6932ad3bdd9fcffefa6b3dae7662",
+  "generation_config_sha256": "4c4a22c00be791b5918357c81c04003c164c64721840b3b6c56205884e4e0bfe",
+  "models": {
+    "image": {
+      "id": "google/vit-base-patch16-224",
+      "revision": "3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3"
+    },
+    "video": {
+      "id": "MCG-NJU/videomae-base-finetuned-kinetics",
+      "revision": "488eb9a0565f257b32866000305c8178965eb9f6"
+    }
+  },
+  "run_settings": {
+    "device": "cuda",
+    "dtype": "float32",
+    "frames": 6,
+    "trials": 100,
+    "seed": 20261024,
+    "shifted_control_offset": 5
+  },
+  "packages": {
+    "torch": "2.2.2+cu118",
+    "transformers": "4.39.3",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "original_config_input_paths": "Omitted from this portable summary; the SHA-256 above identifies the original local config."
+}
