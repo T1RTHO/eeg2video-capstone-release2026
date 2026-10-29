@@ -253,7 +253,7 @@ Potential next steps: not completed features—include multi-subject evaluation,
 | Capstone team members | `Animesh Das Chowdhury, Rayan Hossain Khan, MD Golam Mohiuddin Labib, Nasrin Jahan` |
 | Sponsor | `Dr. Min Wang` |
 | Academic Mentor | `Mathew Vestal` |
-| Institution / programme / year | `[TO BE COMPLETED BY PROJECT OWNER]` |
+| Institution / programme / year | `University of Canberra / Master of Information Technology and Systems, Master of Data Science / 2026` |
 
 The EEG2Video method, the SEED-DV dataset, and the upstream code are the work of their respective authors (see the references above and [third-party attribution](docs/THIRD_PARTY_ATTRIBUTION.md)). Those researchers are not members of this capstone team and have not endorsed this project.
 
