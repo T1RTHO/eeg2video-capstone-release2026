@@ -157,9 +157,14 @@ Both modes support an authorized non-pickled `.npy` upload with shape `(62, 400)
 
 The application has been exercised in the documented local Windows setup, including a one-sample live inference. A clean-machine installation and other platforms/GPUs are not verified. See [environment notes](docs/ENVIRONMENTS.md) before setup.
 
-<p align="center"><img src="docs/media/webapp_interface_idle.png" alt="Local Gradio interface in its idle state: EEG upload, sample index, two empty video panels, metric placeholders and a status area." width="700"></p>
+<p align="center"><img src="docs/media/webapp_interface_idle.png" alt="Local Gradio interface in its idle state" width="700"></p>
 
 *Figure 6. Local Gradio interface (idle state; no reconstruction displayed).*
+
+<p align="center"><img src="docs/media/webapp_interface_result_sample000.png" alt="Local Gradio interface showing generated output for corresponding input" width="700"></p>
+
+*Figure 7. Local Gradio interface (working state; reconstruction displayed).*
+
 
 ## Repository structure
 
