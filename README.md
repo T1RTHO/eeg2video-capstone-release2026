@@ -8,7 +8,7 @@ This capstone implements and evaluates an end-to-end pipeline that maps EEG reco
 
 ## Project overview
 
-EEG measures brain activity non-invasively, but the signal is noisy and has limited spatial resolution. Inferring the content and temporal evolution of a viewed video from EEG is therefore a difficult research problem. This project implements three complementary predictors—visual, semantic, and dynamic—and conditions a temporal video-diffusion pipeline on their outputs.
+EEG measures brain activity non-invasively, but the signal is noisy and has limited spatial resolution. Inferring the content and temporal evolution of a viewed video from EEG is therefore a difficult research problem. This project implements three complementary predictors: visual, semantic, and dynamic, and conditions a temporal video-diffusion pipeline on their outputs.
 
 The completed work covers data preparation, predictor training, temporal UNet fine-tuning, six-frame video generation, quantitative evaluation, classifier-based identification controls, and a local demonstration app. The experimental scope is one participant/session from SEED-DV: 1,200 samples from Blocks 1–6 for training and 200 samples from Block 7 for evaluation.
 
@@ -24,7 +24,7 @@ These objectives are inferred from the completed implementation and reports. The
 
 ## System architecture
 
-The diagram distinguishes training targets from inference inputs. Ground-truth video is used for training targets and is only compared with generated output during evaluation; it is not an inference condition.
+The diagram distinguishes training targets from inference inputs. Ground-truth video serves as the training target and is compared with generated output only during evaluation; it is not an inference condition.
 
 <p align="center"><img src="docs/media/system_architecture.png" alt="EEG2Video inference pipeline: EEG feeds visual, semantic and dynamic predictors; visual latents enter DANA with a dynamic-class beta; semantic embeddings condition the temporal diffusion UNet; DDIM and the VAE decoder produce the video, which is compared with the reference only during evaluation." width="900"></p>
 
@@ -253,7 +253,7 @@ Potential next steps: not completed features—include multi-subject evaluation,
 | Capstone team members | `Animesh Das Chowdhury, Rayan Hossain Khan, MD Golam Mohiuddin Labib, Nasrin Jahan` |
 | Sponsor | `Dr. Min Wang` |
 | Academic Mentor | `Mathew Vestal` |
-| Institution / programme / year | `University of Canberra / Master of Information Technology and Systems, Master of Data Science / 2026` |
+| Institution / program / year | `University of Canberra / Master of Information Technology and Systems, Master of Data Science / 2026` |
 
 The EEG2Video method, the SEED-DV dataset, and the upstream code are the work of their respective authors (see the references above and [third-party attribution](docs/THIRD_PARTY_ATTRIBUTION.md)). Those researchers are not members of this capstone team and have not endorsed this project.
 
