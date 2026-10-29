@@ -175,7 +175,6 @@ The application has been exercised in the documented local Windows setup, includ
 │   └── IdentificationEvaluation/         # Classifier-agreement evaluation
 ├── results/                             # Compact summaries, metrics, and provenance
 ├── webapp/                              # Local Gradio app, worker, tests, requirements
-├── tools/                               # Private-asset staging utility
 ├── data/                                # Dataset access and input notes; no data
 └── docs/                                # Methods, environment, assets, audit, and evidence
 ```
@@ -237,7 +236,7 @@ This work demonstrates a completed engineering and evaluation pipeline, not reli
 
 ## Future work
 
-Potential next steps—not completed features—include multi-subject evaluation, stronger semantic alignment, improved temporal consistency, additional validation with a truly unseen test protocol, and deployment only after artifact rights, access controls, and resource requirements are resolved.
+Potential next steps: not completed features—include multi-subject evaluation, stronger semantic alignment, improved temporal consistency, additional validation with a truly unseen test protocol, and deployment only after artifact rights, access controls, and resource requirements are resolved.
 
 ## Research references
 
@@ -248,14 +247,13 @@ Potential next steps—not completed features—include multi-subject evaluation
 
 ## Contributors and acknowledgements
 
-No verified capstone team, mentor, sponsor, or institution details were available in the project records, so none are stated. **Project owner: complete the placeholders below before publication; do not publish with unfilled fields.**
 
 | Role | Name / details |
 |---|---|
-| Capstone team members | `[TO BE COMPLETED BY PROJECT OWNER]` |
-| Academic supervisor / mentor | `[TO BE COMPLETED BY PROJECT OWNER]` |
+| Capstone team members | `Animesh Das Chowdhury, Rayan Hossain Khan, MD Golam Mohiuddin Labib, Nasrin Jahan` |
+| Sponsor | `Dr. Min Wang` |
+| Academic Mentor | `Mathew Vestal` |
 | Institution / programme / year | `[TO BE COMPLETED BY PROJECT OWNER]` |
-| Sponsor or funding acknowledgement (if any) | `[TO BE COMPLETED BY PROJECT OWNER]` |
 
 The EEG2Video method, the SEED-DV dataset, and the upstream code are the work of their respective authors (see the references above and [third-party attribution](docs/THIRD_PARTY_ATTRIBUTION.md)). Those researchers are not members of this capstone team and have not endorsed this project.
 
