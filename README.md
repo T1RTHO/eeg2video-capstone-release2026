@@ -200,7 +200,7 @@ py -3.11 -m venv webapp\.venv
 .\webapp\.venv\Scripts\python.exe -m pip install -r webapp\requirements.txt
 ```
 
-Create a separate worker environment. Install CUDA-compatible PyTorch and xFormers for the target driver/GPU first, then install `webapp/worker-requirements.txt`. These requirements do not select a CUDA wheel. Do not install the webapp pins over a working training environment. Research and training requirements are preserved separately and are not a single tested environment; see [`docs/ENVIRONMENTS.md`](docs/ENVIRONMENTS.md).
+Create a separate worker environment. Install CUDA-compatible PyTorch and xFormers for the target driver/GPU first, then install `webapp/worker-requirements.txt`. These requirements do not select a CUDA wheel. Do not install the webapp pins over a working training environment. Research and training requirements are preserved separately and are not a single tested environment.
 
 After you have authorized access to the external files described in [External assets setup](docs/EXTERNAL_ASSETS_SETUP.md), set the two required variables and start the checked launcher:
 
@@ -220,7 +220,6 @@ The public source release does **not** contain the complete dataset, trained che
 - Live inference additionally requires the three predictor checkpoints and normalizers, their Block 7 predictions/mappings, the temporal UNet and scheduler/provenance, the verified negative embedding, and the local Stable Diffusion v1-4 VAE.
 - Full retraining requires additional authorized EEG/video inputs, annotations, targets, training state, and compatible model/environment components.
 
-`asset_config.json` uses portable relative paths. `asset_manifest.json` is generated for local provenance/hash checking; it is not a runtime download mechanism and may contain local source paths, so keep it private. See [External assets setup](docs/EXTERNAL_ASSETS_SETUP.md), [artifact details](docs/EXTERNAL_ARTIFACTS.md), and the [private storage assessment](docs/PRIVATE_ASSET_STORAGE_PLAN.md).
 
 ## Reproducibility
 
@@ -229,7 +228,8 @@ The public source release does **not** contain the complete dataset, trained che
 - **Retraining:** training source and run summaries are present, but the required data, targets, checkpoints, and some external model artifacts are not. Research dependency files conflict across Diffusers/Transformers versions; the diffusion-training and final-generation CLIs retain legacy development-root defaults and require an explicit root.
 - **Reproducing the full research study:** not supported by this single-subject project. It does not reproduce the original multi-subject evaluation or establish equivalent results.
 
-The final Block 7 was previously inspected during diagnostics. Results should not be described as a blind test. More detail is in the [publication audit](docs/GITHUB_PUBLICATION_AUDIT.md).
+The final Block 7 was previously inspected during diagnostics. Results should not be described as a blind test.
+
 
 ## Limitations
 
@@ -263,8 +263,5 @@ Potential next steps: not completed features—include multi-subject evaluation,
 | Academic Mentor | `Mathew Vestal` |
 | Institution / program / year | `University of Canberra / Master of Information Technology and Systems, Master of Data Science / 2026` |
 
-The EEG2Video method, the SEED-DV dataset, and the upstream code are the work of their respective authors (see the references above and [third-party attribution](docs/THIRD_PARTY_ATTRIBUTION.md)). Those researchers are not members of this capstone team and have not endorsed this project.
+The EEG2Video method, the SEED-DV dataset, and the upstream code are the work of their respective authors. Those researchers are not members of this capstone team and have not endorsed this project.
 
-## License and usage
-
-No project license is included. Do not assume that the repository's code, models, dataset, or generated/reference media may be redistributed or used without restriction. The upstream EEG2Video source and its Diffusers-derived vendor files require attribution and license review; the Stable Diffusion v1-4 model card identifies CreativeML OpenRAIL-M terms; the VideoMAE checkpoint card states CC-BY-NC-4.0. SEED-DV access requires its own license/application process. Review each applicable term before distribution or use. See the [third-party attribution](docs/THIRD_PARTY_ATTRIBUTION.md) and [publication blockers](docs/PUBLICATION_BLOCKERS.md), and the [publication audit](docs/GITHUB_PUBLICATION_AUDIT.md).
