@@ -8,7 +8,6 @@ This app runs on the local machine and binds only to `127.0.0.1`. It has two del
 The app does not download models, change the research pipeline, write into the configured read-only asset directory, or publish a public endpoint. There is no default to the original development directory.
 The interface presents EEG controls beside the ground-truth/generated video comparison and four recorded evaluation metrics. The 200 Hz input is fixed and still validated by the backend; the unmatched-sample seed is under Advanced Settings. Readiness reflects the startup preflight, and detailed asset, stage, run and evaluation data is available in the collapsed Advanced Details / Diagnostics section.
 
-See the [validation report](validation_report.md) for the tested local configuration and measured checks.
 
 ## Requirements and separate environments
 
