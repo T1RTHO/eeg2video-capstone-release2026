@@ -1,4 +1,4 @@
-# Decoding Visual Perception from Brain Signals using Deep Learning and Video Diffusion 
+# Decoding Visual Perception from Brain Signals using Deep Learning and Video Diffusion Models
 
 *An adaptation of the EEG2Video framework focusing on one subject only*
 
