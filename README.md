@@ -1,6 +1,6 @@
-# EEG2Video: Reconstructing Visual Experiences from Brain Signals
+# Decoding Visual Perception from Brain Signals using Deep Learning and Video Diffusion 
 
-*A single-subject implementation using deep learning and video diffusion models*
+*An adaptation of the EEG2Video framework focusing on one subject only*
 
 This capstone implements and evaluates an end-to-end pipeline that maps EEG recordings to short generated videos. It combines three EEG prediction branches with a temporally conditioned diffusion model, evaluates 200 held-out-by-block samples, and provides a functional local Gradio application.
 
