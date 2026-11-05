@@ -157,8 +157,16 @@ Both modes support an authorized non-pickled `.npy` upload with shape `(62, 400)
 
 The application has been exercised in the documented local Windows setup, including a one-sample live inference. A clean-machine installation and other platforms/GPUs are not verified. See [environment notes](docs/ENVIRONMENTS.md) before setup.
 
-https://github.com/T1RTHO/eeg2video-capstone-release2026/blob/9366ed9616be5d9d792f87abdb2c2d805e3bcd88/docs/UI_Demonstration.mp4
-*Video. UI Implementation.*
+<p align="center">
+  <video controls preload="metadata" width="700" aria-label="UI implementation demonstration">
+    <source src="https://raw.githubusercontent.com/T1RTHO/eeg2video-capstone-release2026/main/docs/UI_Demonstration.mp4" type="video/mp4">
+    Your browser does not support embedded video.
+  </video>
+</p>
+
+[Open the UI implementation demonstration (MP4)](docs/UI_Demonstration.mp4)
+
+*Video 1. Local Gradio UI demonstration.*
 <p align="center"><img src="docs/media/webapp_interface_idle.png" alt="Local Gradio interface in its idle state" width="700"></p>
 
 *Figure 6. Local Gradio interface (idle state; no reconstruction displayed).*
@@ -266,4 +274,3 @@ Potential next steps: not completed features—include multi-subject evaluation,
 | Institution / program / year | `University of Canberra / Master of Information Technology and Systems, Master of Data Science / 2026` |
 
 The EEG2Video method, the SEED-DV dataset, and the upstream code are the work of their respective authors. Those researchers are not members of this capstone team and have not endorsed this project.
-
