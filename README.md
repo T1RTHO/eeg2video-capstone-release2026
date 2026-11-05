@@ -164,7 +164,14 @@ The application has been exercised in the documented local Windows setup, includ
   </video>
 </p>
 
+
+
+
 https://github.com/user-attachments/assets/d86eacee-f6c0-4591-9344-729cb1e3876e
+
+
+
+
 [Open the UI implementation demonstration (MP4)](docs/UI_Demonstration.mp4)
 
 *Video 1. Local Gradio UI demonstration.*
